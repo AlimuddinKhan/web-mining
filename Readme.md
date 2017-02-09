@@ -12,7 +12,9 @@ With growing web content, it is tedious to follow precise information and get th
 ### Running the Program (Command Line)
 ###### Step 1 : Unzip 
 You can unzip using following command
+```
 unzip web_mining.zip
+```
 ###### Step 2: Setting up the environment
 directory lib has all the requires jars for spring framework
 Hnece you need to update your CLASSPATH variable such that program 
@@ -20,15 +22,21 @@ can find all the used classes in the program
 Here is how you can do that;
 a ) Open the terminal
 b ) Open bash profile file
+```
   vi ~/.bash_profile
+```
 c ) Append this line into that file;
+```
   export CLASSPATH=$CLASSPATH:/<path-to-project-directory>/lib/*
+```
 
 d ) save the file and restart your terminal.
 	Restarting the terminal will load all the environment variables with
 	new values.
 	Open the terminal and type
+	```
 	echo $CLASSPATH
+	```
 	to see if the path variable has been updated successfully.
 
 
@@ -36,7 +44,10 @@ d ) save the file and restart your terminal.
 ###### Step 3 : Creating and configuring database
 We assume you have the Mysql 5.7.13  or higher to run this program
 run following command to created database on the go 
+
+```
 mysql < webmining.sql
+```
 
 This command will create the database called web_mining 
 with all required tables with sample data in them.
